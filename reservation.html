@@ -68,6 +68,7 @@
 
             <div class="nav-actions">
                 <a href="menu.html" class="btn btn-primary"><i class="fas fa-utensils"></i> Order Online</a>
+                <button class="mobile-menu-btn"><i class="fas fa-bars"></i></button>
             </div>
         </div>
     </header>
@@ -251,5 +252,15 @@
                 waText += `*Special Request:* ${message}\n`;
             }
             
-            waText += `\nPlease confirm if the
+            waText += `\nPlease confirm if the table is available. Thank you!`;
+
+            // WhatsApp Routing (Amir by default)
+            const waNumber = "919044449969"; 
+            const waLink = `https://wa.me/${waNumber}?text=${encodeURIComponent(waText)}`;
             
+            window.open(waLink, '_blank');
+        });
+    </script>
+    <script src="main.js"></script>
+</body>
+</html>
