@@ -5,47 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     
-    <title>Indian Food Forest | Premium Family Restaurant in Navi Mumbai</title>
-    <meta name="description" content="Experience the magic of authentic Veg and Non-Veg delicacies at Indian Food Forest. Located in Airoli, Navi Mumbai. Order online or book a table today!">
-    <meta name="keywords" content="Indian Food Forest, restaurant in Airoli, best veg non-veg restaurant Thane, food delivery Airoli, Tandoori food">
+    <title>Indian Food Forest | The Ultimate Dining Experience in Navi Mumbai</title>
+    <meta name="description" content="Welcome to Indian Food Forest, Navi Mumbai's premium forest-themed restaurant. Explore our 10-page digital experience covering authentic Veg, Non-Veg, Tandoori, and catering services.">
+    <meta name="keywords" content="Indian Food Forest, Airoli restaurant, forest theme restaurant Navi Mumbai, party orders, fine dining">
     <meta name="author" content="QwickDesk Solutions">
+    <meta name="theme-color" content="#07120a">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
-
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="master.css">
 </head>
-<body class="hidden-scroll">
-
-    <div id="preloader">
-        <div class="loader-content">
-            <i class="fas fa-leaf preloader-icon"></i>
-            <h2>Loading The Forest...</h2>
-            <div class="progress-bar"><div class="progress"></div></div>
-        </div>
-    </div>
+<body class="home-page">
 
     <div class="top-bar">
-        <div class="container top-bar-inner">
-            <div class="contact-strip">
-                <span><i class="fas fa-map-marker-alt"></i> Shop no 50, Near M ward, Digha, Airoli, Navi Mumbai</span>
+        <div class="container top-bar-flex">
+            <div class="contact-info">
+                <span><i class="fas fa-map-marker-alt"></i> Shop 50, Near M ward, Digha, Airoli</span>
+                <span class="divider">|</span>
+                <span><i class="fas fa-clock"></i> Open Today: 11:00 AM - 11:30 PM</span>
             </div>
-            <div class="social-strip">
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <div class="top-links">
+                <a href="catering.html"><i class="fas fa-glass-cheers"></i> Party Orders</a>
+                <a href="contact.html"><i class="fas fa-headset"></i> Support</a>
             </div>
         </div>
     </div>
 
-    <header class="header" id="header">
-        <nav class="navbar container">
+    <header class="main-header" id="navbar">
+        <div class="container nav-container">
             <a href="index.html" class="brand-logo">
                 <i class="fas fa-tree logo-icon"></i>
                 <div class="logo-text">
@@ -54,197 +46,182 @@
                 </div>
             </a>
             
-            <div class="nav-menu" id="nav-menu">
+            <nav class="nav-menu">
                 <ul class="nav-list">
-                    <li class="nav-item"><a href="#hero" class="nav-link active-link">Home</a></li>
-                    <li class="nav-item"><a href="#about" class="nav-link">The Story</a></li>
-                    <li class="nav-item"><a href="#menu-explore" class="nav-link">Our Menu</a></li>
-                    <li class="nav-item"><a href="#gallery" class="nav-link">Ambiance</a></li>
-                    <li class="nav-item"><a href="#footer-section" class="nav-link">Contact</a></li>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">Our Story</a></li>
+                    
+                    <li class="dropdown">
+                        <a href="menu.html">Our Menus <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="starters.html">Starters & Soups</a></li>
+                            <li><a href="main-course.html">Main Course & Tandoori</a></li>
+                            <li><a href="chinese.html">Chinese Specialties</a></li>
+                            <li><a href="desserts.html">Beverages & Desserts</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li><a href="reservation.html">Table Booking</a></li>
+                    <li><a href="catering.html">Catering</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
-                <div class="nav-close" id="nav-close"><i class="fas fa-times"></i></div>
-            </div>
+            </nav>
 
             <div class="nav-actions">
-                <a href="#menu-explore" class="btn btn-primary nav-btn"><i class="fas fa-utensils"></i> Order Now</a>
-                <div class="nav-toggle" id="nav-toggle"><i class="fas fa-bars"></i></div>
+                <a href="menu.html" class="btn btn-primary"><i class="fas fa-utensils"></i> Order Online</a>
+                <button class="mobile-menu-btn"><i class="fas fa-bars"></i></button>
             </div>
-        </nav>
+        </div>
     </header>
 
-    <main class="main">
-        <section class="hero section" id="hero">
+    <main>
+        <section class="hero-section">
             <div class="hero-overlay"></div>
-            <div class="hero-container container grid">
-                <div class="hero-data" data-aos="fade-up" data-aos-duration="1500">
-                    <h3 class="hero-subtitle">Welcome to Nature's Kitchen</h3>
-                    <h1 class="hero-title">Experience the <br><span class="text-gradient">Magic of Spices</span></h1>
-                    <p class="hero-description">An immersive culinary journey featuring authentic Veg & Non-Veg delicacies, surrounded by a serene forest ambiance.</p>
-                    <div class="hero-buttons">
-                        <a href="#menu-explore" class="btn btn-primary"><i class="fas fa-book-open"></i> Explore Menu</a>
-                        <a href="https://wa.me/919044449969" target="_blank" class="btn btn-outline"><i class="fab fa-whatsapp"></i> Book a Table</a>
-                    </div>
+            <div class="container hero-content text-center">
+                <h4 data-aos="fade-down" data-aos-duration="1000" class="hero-tagline">Welcome to the Wilderness of Taste</h4>
+                <h1 data-aos="zoom-in" data-aos-duration="1200" class="hero-main-title">A Symphony of <br><span class="text-gradient">Authentic Flavors</span></h1>
+                <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" class="hero-desc">Immerse yourself in a nature-inspired dining experience. From fiery tandoors to soothing desserts, every dish tells a story.</p>
+                
+                <div class="hero-btn-group" data-aos="fade-up" data-aos-delay="400">
+                    <a href="reservation.html" class="btn btn-solid-gold">Reserve Your Table</a>
+                    <a href="about.html" class="btn btn-outline-light">Discover Our Story</a>
                 </div>
             </div>
-            <div class="scroll-down">
-                <a href="#about"><i class="fas fa-chevron-down scroll-bounce"></i></a>
-            </div>
-        </section>
-
-        <section class="about section" id="about">
-            <div class="container">
-                <div class="section-title-wrap" data-aos="fade-up">
-                    <h2 class="section-title">Why Choose Us?</h2>
-                    <p class="section-subtitle">Good Food • Good Mood</p>
-                </div>
-                <div class="features-grid grid">
-                    <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
-                        <div class="feature-icon"><i class="fas fa-leaf"></i></div>
-                        <h3>Fresh Ingredients</h3>
-                        <p>Sourced daily to ensure maximum flavor and health in every bite.</p>
-                    </div>
-                    <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
-                        <div class="feature-icon"><i class="fas fa-fire-burner"></i></div>
-                        <h3>Authentic Flavors</h3>
-                        <p>Traditional Indian and Chinese recipes crafted by master chefs.</p>
-                    </div>
-                    <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
-                        <div class="feature-icon"><i class="fas fa-hand-sparkles"></i></div>
-                        <h3>Hygienic Kitchen</h3>
-                        <p>Strict quality control and 100% clean cooking environment.</p>
-                    </div>
-                    <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
-                        <div class="feature-icon"><i class="fas fa-tree"></i></div>
-                        <h3>Great Ambiance</h3>
-                        <p>A unique forest-themed dining experience for your family.</p>
-                    </div>
-                </div>
+            
+            <div class="scroll-indicator">
+                <span>Scroll to Explore</span>
+                <i class="fas fa-long-arrow-alt-down"></i>
             </div>
         </section>
 
-        <section class="menu-explore section" id="menu-explore">
+        <section class="category-showcase section-padding">
             <div class="container">
-                <div class="section-title-wrap text-center" data-aos="fade-up">
-                    <h2 class="section-title">Exquisite Menu</h2>
-                    <p class="section-subtitle">Select a category to explore our dishes. Click on any item to view details and order via WhatsApp.</p>
+                <div class="section-header text-center" data-aos="fade-up">
+                    <h2 class="section-title">Explore The Forest Menu</h2>
+                    <p class="section-subtitle">Categorized for your ultimate culinary convenience.</p>
                 </div>
 
-                <div class="menu-filters" data-aos="fade-up" data-aos-delay="200">
-                    <button class="filter-btn active-filter" data-filter="all">All Items</button>
-                    <button class="filter-btn" data-filter="veg"><i class="fas fa-circle" style="color: #2ecc71;"></i> Pure Veg</button>
-                    <button class="filter-btn" data-filter="nonveg"><i class="fas fa-caret-up" style="color: #e74c3c;"></i> Non-Veg</button>
-                    <button class="filter-btn" data-filter="tandoori"><i class="fas fa-fire"></i> Tandoori</button>
-                    <button class="filter-btn" data-filter="chinese"><i class="fas fa-bowl-rice"></i> Chinese</button>
-                </div>
+                <div class="category-grid">
+                    <a href="starters.html" class="cat-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="cat-img">
+                            <img src="https://images.unsplash.com/photo-1599487405270-861c834a3174?q=80&w=600&auto=format&fit=crop" alt="Starters">
+                        </div>
+                        <div class="cat-content">
+                            <h3>Starters & Soups</h3>
+                            <p>Begin your journey with a crunch.</p>
+                            <span class="cat-link">View Menu <i class="fas fa-arrow-right"></i></span>
+                        </div>
+                    </a>
 
-                <div class="menu-grid" id="menu-grid" data-aos="fade-in" data-aos-delay="400">
-                    </div>
+                    <a href="main-course.html" class="cat-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="cat-img">
+                            <img src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?q=80&w=600&auto=format&fit=crop" alt="Main Course">
+                        </div>
+                        <div class="cat-content">
+                            <h3>Indian Main Course</h3>
+                            <p>Rich gravies & aromatic biryanis.</p>
+                            <span class="cat-link">View Menu <i class="fas fa-arrow-right"></i></span>
+                        </div>
+                    </a>
+
+                    <a href="chinese.html" class="cat-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="cat-img">
+                            <img src="https://images.unsplash.com/photo-1585032226651-759b368d7246?q=80&w=600&auto=format&fit=crop" alt="Chinese">
+                        </div>
+                        <div class="cat-content">
+                            <h3>Oriental & Chinese</h3>
+                            <p>Wok-tossed fiery delicacies.</p>
+                            <span class="cat-link">View Menu <i class="fas fa-arrow-right"></i></span>
+                        </div>
+                    </a>
+
+                    <a href="desserts.html" class="cat-card" data-aos="fade-up" data-aos-delay="400">
+                        <div class="cat-img">
+                            <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?q=80&w=600&auto=format&fit=crop" alt="Desserts">
+                        </div>
+                        <div class="cat-content">
+                            <h3>Beverages & Desserts</h3>
+                            <p>Sweet endings & refreshing sips.</p>
+                            <span class="cat-link">View Menu <i class="fas fa-arrow-right"></i></span>
+                        </div>
+                    </a>
+                </div>
             </div>
         </section>
 
-        <section class="gallery section" id="gallery">
-            <div class="container">
-                <div class="section-title-wrap" data-aos="fade-right">
-                    <h2 class="section-title">The Forest Vibe</h2>
-                    <p class="section-subtitle">Take a glimpse of our beautiful dining space.</p>
+        <section class="catering-banner">
+            <div class="container catering-flex">
+                <div class="catering-text" data-aos="fade-right">
+                    <h2>Planning a Special Event?</h2>
+                    <p>From intimate Kitty Parties to grand Anniversaries and Outdoor Catering, Indian Food Forest brings the magic to your guests.</p>
+                    <ul class="catering-features">
+                        <li><i class="fas fa-check-circle"></i> Custom Menu Planning</li>
+                        <li><i class="fas fa-check-circle"></i> Live Tandoor Counters</li>
+                        <li><i class="fas fa-check-circle"></i> Professional Service Staff</li>
+                    </ul>
+                    <a href="catering.html" class="btn btn-primary mt-20">Explore Catering Services</a>
                 </div>
-                <div class="swiper gallery-swiper" data-aos="zoom-in">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?q=80&w=1000&auto=format&fit=crop" alt="Ambiance 1" class="gallery-img"></div>
-                        <div class="swiper-slide"><img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=1000&auto=format&fit=crop" alt="Ambiance 2" class="gallery-img"></div>
-                    </div>
-                    <div class="swiper-pagination"></div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
+                <div class="catering-image" data-aos="fade-left">
+                    <img src="https://images.unsplash.com/photo-1555244162-803834f70033?q=80&w=800&auto=format&fit=crop" alt="Catering Event" class="rounded-img">
                 </div>
             </div>
         </section>
     </main>
 
-    <div class="item-modal" id="item-modal">
-        <div class="modal-backdrop" id="modal-backdrop"></div>
-        <div class="modal-box glass-card">
-            <button class="modal-close" id="modal-close"><i class="fas fa-times"></i></button>
-            <div class="modal-body grid">
-                <div class="modal-img-container">
-                    <img src="" alt="Food Item" id="modal-image" class="modal-item-img">
-                    <div id="modal-diet-badge" class="modal-badge"></div>
-                </div>
-                <div class="modal-content-details">
-                    <span class="modal-category" id="modal-category">Category Name</span>
-                    <h2 class="modal-title" id="modal-title">Item Name</h2>
-                    <p class="modal-price" id="modal-price">₹0</p>
-                    <p class="modal-desc" id="modal-desc">Detailed description of the food item goes here. Spices, preparation method, etc.</p>
-                    
-                    <div class="order-action-box">
-                        <h4 class="order-title"><i class="fab fa-whatsapp"></i> Instant WhatsApp Order</h4>
-                        <p class="order-subtitle">Route your order request to our managers directly:</p>
-                        
-                        <div class="routing-buttons">
-                            <button class="route-btn amir-btn" onclick="sendWhatsAppOrder('919044449969', 'Amir')">
-                                <i class="fas fa-user-tie"></i> Order to Amir
-                            </button>
-                            <button class="route-btn khalid-btn" onclick="sendWhatsAppOrder('918286468504', 'Khalid')">
-                                <i class="fas fa-user-tie"></i> Order to Khalid
-                            </button>
-                            <button class="route-btn manoj-btn" onclick="sendWhatsAppOrder('917738544802', 'Manoj')">
-                                <i class="fas fa-user-tie"></i> Order to Manoj
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <footer class="footer section" id="footer-section">
-        <div class="container footer-container grid">
-            
-            <div class="footer-brand-info">
-                <a href="#" class="brand-logo footer-logo">
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-about">
+                <a href="index.html" class="brand-logo footer-logo">
                     <i class="fas fa-tree logo-icon"></i>
                     INDIAN FOOD <span class="highlight">FOREST</span>
                 </a>
-                <p class="footer-desc">Experience the wilderness of authentic spices in Navi Mumbai. We also take party orders for Birthdays, Anniversaries, and Outdoor Catering.</p>
+                <p>An oasis of flavors in Navi Mumbai. We combine nature's tranquility with culinary excellence.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
             </div>
 
-            <div class="footer-links-box">
-                <h3 class="footer-title">Contact Directory</h3>
-                <ul class="footer-contacts">
-                    <li><i class="fas fa-phone-alt"></i> Amir: +91 90444 49969 (WP)</li>
-                    <li><i class="fas fa-phone-alt"></i> Khalid: +91 82864 68504</li>
-                    <li><i class="fas fa-phone-alt"></i> Manoj: +91 77385 44802</li>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="about.html"><i class="fas fa-angle-right"></i> About Us</a></li>
+                    <li><a href="menu.html"><i class="fas fa-angle-right"></i> Full Menu</a></li>
+                    <li><a href="reservation.html"><i class="fas fa-angle-right"></i> Book a Table</a></li>
+                    <li><a href="catering.html"><i class="fas fa-angle-right"></i> Party Orders</a></li>
                 </ul>
             </div>
 
-            <div class="footer-location-box">
-                <h3 class="footer-title">Find Us</h3>
-                <address class="footer-address">
-                    <i class="fas fa-map-marker-alt"></i>
-                    Shop no 50, Opp to Ramnagar Gate,<br>
-                    Near M ward, Digha, Thane, Airoli,<br>
-                    Navi Mumbai 400708
-                </address>
+            <div class="footer-contact">
+                <h3>Get In Touch</h3>
+                <ul class="contact-list">
+                    <li>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Shop no 50, Opp to Ramnagar Gate, Near M ward, Digha, Thane, Airoli, Navi Mumbai 400708</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-phone-alt"></i>
+                        <div class="phones">
+                            <a href="tel:919044449969">Amir: +91 90444 49969</a>
+                            <a href="tel:918286468504">Khalid: +91 82864 68504</a>
+                            <a href="tel:917738544802">Manoj: +91 77385 44802</a>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </div>
-
-        <div class="footer-bottom container">
-            <p class="copyright">&copy; 2026 Indian Food Forest. All rights reserved.</p>
-            <p class="developer-tag">Engineered digitally by <a href="https://qwickdesksolutions.co.in" target="_blank">QwickDesk Solutions</a></p>
+        <div class="footer-bottom text-center">
+            <div class="container">
+                <p>&copy; 2026 Indian Food Forest. All rights reserved.</p>
+                <p class="agency-credit">Designed & Developed by <a href="https://qwickdesksolutions.co.in" target="_blank" class="highlight">QwickDesk Solutions</a></p>
+            </div>
         </div>
     </footer>
 
-    <a href="https://wa.me/919044449969" class="floating-whatsapp" target="_blank" title="Chat with us">
-        <i class="fab fa-whatsapp"></i>
-    </a>
-
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    
-    <script src="database.js"></script>
-    <script src="app.js"></script>
-    
     <script>
+        // Initialize Scroll Animations
         AOS.init({
             once: true,
             offset: 50,
